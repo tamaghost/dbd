@@ -11,7 +11,7 @@ public class LibroListaFavoritos {
     @Column(name = "id_librolista")
     private long LibroLista;
 
-    //faltan llaves foraneas
-
-
+    @ManyToOne
+    @JoinColumn(name ="id_lf")
+    private ListaFavoritos id_lista;
 }

@@ -14,6 +14,8 @@ public class ListaFavoritos {
     @Column(name = "nombre_libro")
     private long nombreLibro;
 
-    //falta llave foranea
+    @ManyToOne
+    @JoinColumn(name ="cod_rankingl")
+    private RankingListaFavoritos codRankingl;
 
 }

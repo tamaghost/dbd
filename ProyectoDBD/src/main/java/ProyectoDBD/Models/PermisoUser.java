@@ -4,6 +4,7 @@ package ProyectoDBD.Models;
 import javax.persistence.*;
 
 @Entity
+@SuppressWarnings("ALL")
 @Table(name="permisouser")
 public class PermisoUser {
 

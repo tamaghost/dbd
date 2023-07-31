@@ -11,5 +11,11 @@ public class LibroCategoria {
     @Column(name = "id_librocategoria")
     private long LibroCategoria;
 
-    //Faltan llaves foraneas
+    @ManyToOne
+    @JoinColumn(name ="id_libro")
+    private Libro idLibro;
+
+    @ManyToOne
+    @JoinColumn(name ="cod_categoria")
+    private Categoria categoria;
 }

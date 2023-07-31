@@ -4,6 +4,7 @@ package ProyectoDBD.Models;
 import javax.persistence.*;
 
 @Entity
+@SuppressWarnings("ALL")
 @Table(name="libro")
 public class Libro {
 
@@ -33,5 +34,12 @@ public class Libro {
     @Column(name="url")
     private long url;
 
-    //faltan llaves foraneas
+    @ManyToOne
+    @JoinColumn(name ="cod_locgeo")
+    private LocalizacionGeografica Localizacion;
+
+    @ManyToOne
+    @JoinColumn(name ="cod_rankingl")
+    private RankingListaFavoritos codRankingL;
+    //Llave foránea ranking visualizados
 }

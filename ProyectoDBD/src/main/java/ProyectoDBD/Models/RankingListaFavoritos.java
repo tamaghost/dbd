@@ -3,6 +3,7 @@ package ProyectoDBD.Models;
 import javax.persistence.*;
 
 @Entity
+@SuppressWarnings("ALL")
 @Table(name="rankinglistafavoritos")
 public class RankingListaFavoritos {
 
@@ -16,7 +17,5 @@ public class RankingListaFavoritos {
 
     @Column(name = "nombre_librorl")
     private long libroRL;
-
-    //faltan llaves foraneas
 
 }

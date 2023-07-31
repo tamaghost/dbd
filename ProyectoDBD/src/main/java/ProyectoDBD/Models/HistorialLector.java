@@ -4,6 +4,7 @@ package ProyectoDBD.Models;
 import javax.persistence.*;
 
 @Entity
+@SuppressWarnings("ALL")
 @Table(name="historiallector")
 public class HistorialLector {
 
@@ -21,5 +22,12 @@ public class HistorialLector {
     @Column(name = "fechahistorial")
     private long fechaHistorial;
 
-    //Faltan llaves foraneas
+    @ManyToOne
+    @JoinColumn(name ="id_user")
+    private Usuario idUser;
+
+    @ManyToOne
+    @JoinColumn(name ="id_libro")
+    private Libro idLibro;
+    //llave ranking visualizados
 }

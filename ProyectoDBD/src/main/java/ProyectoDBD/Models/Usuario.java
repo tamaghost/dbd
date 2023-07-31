@@ -4,6 +4,7 @@ package ProyectoDBD.Models;
 import javax.persistence.*;
 
 @Entity
+@SuppressWarnings("ALL")
 @Table(name="usuario")
 public class Usuario {
     @Id
@@ -31,13 +32,15 @@ public class Usuario {
 
     @ManyToOne
     @JoinColumn(name ="cod_est")
-    private Estadisticas idEstado;
+    private Estadisticas idEst;
 
     @ManyToOne
     @JoinColumn(name ="id_direccion")
     private Direccion idDir;
 
-    //Falta llave de lista favoritos
+    @ManyToOne
+    @JoinColumn(name ="id_lf")
+    private Direccion idLista;
 
 
 }

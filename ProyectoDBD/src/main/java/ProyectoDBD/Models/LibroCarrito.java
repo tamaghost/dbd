@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 
 @Entity
+@SuppressWarnings("ALL")
 @Table(name="librocarrito")
 public class LibroCarrito {
 
@@ -12,5 +13,11 @@ public class LibroCarrito {
     @Column(name = "id_librocarrito")
     private long libroCarrito;
 
-    //Faltan llaves foraneas
+    @ManyToOne
+    @JoinColumn(name ="id_user")
+    private Usuario id_user;
+
+    @ManyToOne
+    @JoinColumn(name ="carrito_user")
+    private Carrito carritoUser;
 }

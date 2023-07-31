@@ -2,6 +2,7 @@ package ProyectoDBD.Models;
 import javax.persistence.*;
 
 @Entity
+@SuppressWarnings("ALL")
 @Table(name="tipodeuser")
 public class TipoDeUser {
     @Id
