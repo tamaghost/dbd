@@ -43,8 +43,4 @@ public class Usuario {
     private Direccion idLista;
 
 
-    //Realizamos consructor usuario para registrar
-
-
-
 }
