@@ -1,6 +1,8 @@
 package ProyectoDBD.Models;
 
-import jakarta.persistence.*;
+
+
+import javax.persistence.*;
 
 @Entity
 @Table(name="estadisticas")

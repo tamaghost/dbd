@@ -1,7 +1,7 @@
 package ProyectoDBD.Models;
 
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name="usuario")
@@ -9,7 +9,7 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_user")
-    private long id;
+    private long idUser;
 
     @Column(name = "contraseña")
     private long contraseña;
