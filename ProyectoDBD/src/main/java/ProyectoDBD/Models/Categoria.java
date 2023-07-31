@@ -4,7 +4,7 @@ package ProyectoDBD.Models;
 import javax.persistence.*;
 
 @Entity
-@Table(name="carrito")
+@Table(name="categoria")
 public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,5 +12,5 @@ public class Categoria {
     private long categoria;
 
     @Column(name = "tipos")
-    private long tipos;
+    private String tipos;
 }
