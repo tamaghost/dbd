@@ -1,8 +1,4 @@
 package ProyectoDBD.Models;
-
-
-
-
 import javax.persistence.*;
 
 @Entity

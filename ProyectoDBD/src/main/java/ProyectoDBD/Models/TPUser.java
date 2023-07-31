@@ -2,6 +2,7 @@ package ProyectoDBD.Models;
 
 import javax.persistence.*;
 
+@SuppressWarnings("ALL")
 @Entity
 @Table(name="tp_usuario")
 public class TPUser {
@@ -11,11 +12,13 @@ public class TPUser {
     @Column(name = "id_tp_user")
     private long idTP;
 
-    @Column(name = "id_user")
-    private long idUser;
+    @ManyToOne
+    @JoinColumn(name ="id_user")
+    private Usuario idUser;
 
-    @Column(name = "id_tipouser")
-    private long id_tipo;
+    @ManyToOne
+    @JoinColumn(name ="id_tipouser")
+    private TipoDeUser id_tipo;
 
-    //Faltan cosas?
+
 }

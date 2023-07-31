@@ -17,5 +17,10 @@ public class Pago {
     @Column(name = "mediopago")
     private long promedio;
 
-    //Faltan llaves foraneas
+    @ManyToOne
+    @JoinColumn(name = "carrito_user")
+    private Carrito carritoUser;
+
+
+
 }

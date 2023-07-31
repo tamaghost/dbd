@@ -29,5 +29,15 @@ public class Usuario {
     @Column(name="correo")
     private long correo;
 
-    //Faltan mas cosas
+    @ManyToOne
+    @JoinColumn(name ="cod_est")
+    private Estadisticas idEstado;
+
+    @ManyToOne
+    @JoinColumn(name ="id_direccion")
+    private Direccion idDir;
+
+    //Falta llave de lista favoritos
+
+
 }

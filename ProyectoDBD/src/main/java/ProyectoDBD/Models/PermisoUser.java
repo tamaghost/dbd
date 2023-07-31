@@ -12,5 +12,11 @@ public class PermisoUser {
     @Column(name = "id_permisouser")
     private long id_permisoUser;
 
-    //Faltan llaves foraneas
+    @ManyToOne
+    @JoinColumn(name = "id_permisos")
+    private Permiso id_permiso;
+
+    @ManyToOne
+    @JoinColumn(name = "id_tipouser")
+    private PermisoUser id_tipo;
 }

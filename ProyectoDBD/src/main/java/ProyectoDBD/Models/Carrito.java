@@ -11,5 +11,5 @@ public class Carrito {
     @Column(name = "carrito_user")
     private long carritoUser;
 
-    //Faltan llaves foraneas
+
 }
