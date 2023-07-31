@@ -3,6 +3,7 @@ package ProyectoDBD.Models;
 import javax.persistence.*;
 
 @Entity
+@SuppressWarnings("ALL")
 @Table(name="listafavoritos")
 public class ListaFavoritos {
 
